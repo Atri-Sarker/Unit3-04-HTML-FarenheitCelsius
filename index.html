@@ -1,9 +1,58 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Title</title>
-  </head>
-  <body>
-    <p>Paragraph</p>
-  </body>
+
+<head>
+  <!-- Meta data section -->
+  <meta charset="utf-8">
+  <meta name="description" content="Calculator for converting Fahrenheit to Celsius, Using Javascript">
+  <meta name="keywords" content="immaculata, icd2o">
+  <meta name="author" content="Atri Sarker">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="./fav_index/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./fav_index/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./fav_index/favicon-16x16.png">
+  <link rel="manifest" href="./fav_index/site.webmanifest">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="./css/style.css">
+
+  <!-- Title -->
+  <title>Fahrenheit to Celsius in JS</title>
+</head>
+
+<body>
+
+  <!-- Script -->
+  <script defer src="./js/script.js"></script>
+
+  <!-- Header -->
+  <h1>Fahrenheit to Celsius in JS</h1>
+
+  <!-- Table For Layout -->
+  <table>
+    <tr>
+      <td>
+        <!-- Fahrenheit Input | Default value of room temperature -->
+        <label for="fdInput">Fahrenheit (<sup>o</sup>F):</label>
+        <input id="fdInput" type="number" name="fd" value="77" step="0.01" min="0" />
+        <br>
+      </td>
+      <td>
+        <!-- Image of Formula -->
+        <img class="formulaImg" src="./images/formulaImg.jpg" alt="Fahrenheit to Celsius Formula">
+        <br>
+      </td>
+    </tr>
+  </table>
+
+  <!-- Calculate Button -->
+  <button id="CalculateBtn">Calculate</button>
+
+  <!-- Result -->
+  <p>Result: <b id="celsiusResult"> ? </b></p>
+
+</body>
+
 </html>
